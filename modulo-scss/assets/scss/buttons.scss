@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+//mixin: é uma funcionalidade do sass que cria uma função para uma determinada funcionalidade, facilitando a manutenção do código.
+@mixin button-style($background, $color){
+    background-color: $background;
+    color: $color;
+    &:hover {
+        /* functions: existem funções já existentes mas também podemos criar funções. 
+        Exemplos de funções já existentes são: 
+            darken(cor, %tom de escuro) - dá uma porcentagem de tom escuro na cor escolhida;
+            desaturate(cor, %saturação) - ele tira um pouco da saturação da cor escolhida;
+            mix(cor, cor) - faz uma mistura de duas cores e aplica na tag desejada;
+            grayscale(cor) - aplica a cor cinza na cor escolhida; */
+        background-color: darken($background, 15%);
+        cursor: pointer;
+    }
+}
+
+.btn{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-weight: 700;
+    display: block;
+    margin: 20px;
+
+    //herança: herda os estilos gerais e adiciona os estilos específicos desejados. 
+    &.btn-orange{
+        @include button-style($color-orange, #fff); //nessa linha, ele está executando o mixin, adaptando as cores de background e cor de texto referente aos atributos passados por parâmetro;
+    }
+    
+    &.btn-purple{
+        @include button-style($color-purple, #fff); 
+    }
+    
+    &.btn-blue{
+        @include button-style($color-blue, #fff);
+    }
+}

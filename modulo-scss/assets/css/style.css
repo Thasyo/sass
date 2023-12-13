@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.btn {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: aliceblue;
+  font-weight: 700;
+  display: block;
+  margin: 20px;
+}
+.btn.btn-orange {
+  background-color: orange;
+  color: #fff;
+}
+.btn.btn-orange:hover {
+  /* functions: existem funções já existentes mas também podemos criar funções. 
+  Exemplos de funções já existentes são: 
+      darken(cor, %tom de escuro) - dá uma porcentagem de tom escuro na cor escolhida;
+      desaturate(cor, %saturação) - ele tira um pouco da saturação da cor escolhida;
+      mix(cor, cor) - faz uma mistura de duas cores e aplica na tag desejada;
+      grayscale(cor) - aplica a cor cinza na cor escolhida; */
+  background-color: #b37400;
+  cursor: pointer;
+}
+.btn.btn-purple {
+  background-color: purple;
+  color: #fff;
+}
+.btn.btn-purple:hover {
+  /* functions: existem funções já existentes mas também podemos criar funções. 
+  Exemplos de funções já existentes são: 
+      darken(cor, %tom de escuro) - dá uma porcentagem de tom escuro na cor escolhida;
+      desaturate(cor, %saturação) - ele tira um pouco da saturação da cor escolhida;
+      mix(cor, cor) - faz uma mistura de duas cores e aplica na tag desejada;
+      grayscale(cor) - aplica a cor cinza na cor escolhida; */
+  background-color: #340034;
+  cursor: pointer;
+}
+.btn.btn-blue {
+  background-color: blue;
+  color: #fff;
+}
+.btn.btn-blue:hover {
+  /* functions: existem funções já existentes mas também podemos criar funções. 
+  Exemplos de funções já existentes são: 
+      darken(cor, %tom de escuro) - dá uma porcentagem de tom escuro na cor escolhida;
+      desaturate(cor, %saturação) - ele tira um pouco da saturação da cor escolhida;
+      mix(cor, cor) - faz uma mistura de duas cores e aplica na tag desejada;
+      grayscale(cor) - aplica a cor cinza na cor escolhida; */
+  background-color: #0000b3;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
